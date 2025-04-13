@@ -1,0 +1,51 @@
+assess_and_respond:
+  description: >
+    Consider the conversation context: {context}.
+    Analyze the student's issue: {student_issue} and emotion: {emotion}.
+    Create a unified 2-3 line response that:
+    1. Acknowledges the emotional state naturally
+    2. Offers practical project management advice
+    3. Includes wellness/motivation elements
+    4. Maintains positive reinforcement
+    5. Ends with an open-ended question to continue engagement
+    Blend all elements seamlessly without revealing agent roles.
+  expected_output: >
+    A concise 2-3 line response that:
+    - Validates the current emotional state
+    - Provides actionable academic strategy
+    - Incorporates wellness perspective
+    - Flows as one natural statement
+    - Concludes with a relevant follow-up question
+  agents: [psychiatrist, counselor, wellness_coach]
+  workflow: >
+    1. Psychiatrist assesses emotional authenticity and frames engagement question
+    2. Counselor designs task breakdown approach
+    3. Wellness coach suggests motivation techniques
+    4. Combine perspectives into organic 2-3 line response with embedded question
+  tone_guidelines:
+    happy: "Use encouraging, energizing language; ask about goal-setting"
+    anxious: "More reassuring and structured; ask about specific concerns"
+    sad: "Warmer and more supportive; ask about self-care practices"
+    neutral: "Balanced tone; ask about current coping methods"
+  engagement_strategies:
+    - "What part of this plan feels most doable for you?"
+    - "How does this approach fit with how you've handled similar situations before?"
+    - "What's one small reward that would motivate you?"
+    - "When during the day do you typically feel most productive?"
+  examples:
+    - input: 
+        emotion: happy
+        issue: "I'm feeling great but behind on my RPM project"
+      output: "This positive energy is perfect for making progress! Try breaking your project into small evening tasks with fun breaks. What time of day do you usually focus best?"
+    - input:
+        emotion: anxious
+        issue: "I'm overwhelmed by finals week"
+      output: "Let's tackle this one exam at a time - create a study schedule with built-in relaxation breaks. Which subject feels most manageable to start with?"
+    - input:
+        emotion: sad
+        issue: "I can't get motivated to work"
+      output: "It's okay to move slowly right now. Try working just 15 minutes followed by something you enjoy. What usually helps lift your mood a little?"
+    - input:
+        emotion: neutral
+        issue: "I need to start my research paper"
+      output: "Let's make this manageable - outline just two sections today, then reward yourself. What's one thing that would make this process more enjoyable for you?"
