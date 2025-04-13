@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AI Virtual Psychiatrist
 
 An intelligent mental health assistant that combines facial emotion recognition and collaborative AI to provide personalized mental health support.
@@ -164,3 +165,6 @@ Tasks are defined in `config/tasks.yaml`. The main task is `assess_and_respond`,
 
 - CrewAI for the multi-agent framework
 - OpenCV for computer vision capabilities
+=======
+# ai-virtual-psychiatrist
+>>>>>>> 50cec3bda96aff165c829c69bd8159340ebae4f9
