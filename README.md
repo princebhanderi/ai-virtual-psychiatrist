@@ -112,6 +112,8 @@ This application serves as a virtual psychiatric assistant that can detect emoti
 
 ## How It Works
 ![p2](https://github.com/user-attachments/assets/7c6621ab-0cd4-47fa-943e-973f2a778869)
+![aipsychiatrist](https://github.com/user-attachments/assets/4dfd543b-4905-40a6-a495-72d2cac2f2fa)
+
 
 1. **Facial Emotion Detection**:
    - The application captures the user's facial expression via webcam
