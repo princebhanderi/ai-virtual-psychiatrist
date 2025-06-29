@@ -111,6 +111,7 @@ This application serves as a virtual psychiatric assistant that can detect emoti
 | `/emotion-analytics/` | GET | Get emotion statistics |
 
 ## How It Works
+![p2](https://github.com/user-attachments/assets/7c6621ab-0cd4-47fa-943e-973f2a778869)
 
 1. **Facial Emotion Detection**:
    - The application captures the user's facial expression via webcam
